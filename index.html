@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>АВЕРС-LVIV — Постачання електричної енергії</title>
   <meta name="description" content="ПП АВЕРС-LVIV — надійний партнер у сфері постачання електричної енергії та модернізації інфраструктури." />
-  <link rel="icon" type="image/png" href="static/logo.png" />
 
+  <link rel="icon" type="image/png" href="static/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -170,7 +170,7 @@
   </style>
 </head>
 
-<body class="grid-bg">
+<body class="grid-bg flex flex-col min-h-screen">
 
   <header id="nav" class="fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20 md:h-24">
@@ -215,184 +215,183 @@
     </div>
   </header>
 
+  <main class="flex-grow flex flex-col justify-center">
 
-  <section class="relative min-h-[90vh] flex flex-col justify-center pt-24 overflow-hidden">
-    <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20">
-      <div class="max-w-4xl">
+    <section class="relative min-h-[90vh] flex flex-col justify-center pt-24 overflow-hidden">
+      <div class="relative max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-20 w-full">
+        <div class="max-w-4xl">
 
-        <div class="anim-up d-100">
-          <span class="section-label">
-            <span class="pulse-dot"></span>
-            Офіційний постачальник електроенергії
-          </span>
+          <div class="anim-up d-100 max-w-full inline-block">
+            <span class="section-label text-[10px] sm:text-xs whitespace-normal sm:whitespace-nowrap text-left break-words max-w-full">
+              <span class="pulse-dot flex-shrink-0"></span>
+              Офіційний постачальник електроенергії
+            </span>
+          </div>
+
+          <h1 class="font-display font-900 mt-6 sm:mt-8 leading-[1.1] sm:leading-[1.05] text-3xl sm:text-5xl md:text-6xl lg:text-7xl break-words hyphens-auto anim-up d-200">
+            <span class="text-cream">Надійне</span><br/>
+            <span class="hero-stripe">електропостачання</span><br/>
+            <span class="text-cream">вашого бізнесу</span>
+          </h1>
+
+          <p class="mt-6 text-muted font-body font-300 text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed anim-up d-300">
+            Енергетична стабільність вашого підприємства — наш пріоритет. Гарантуємо надійність, повну прозорість розрахунків та сувору відповідність законодавству України.
+          </p>
+
+          <div class="mt-10 flex flex-wrap gap-4 anim-up d-400">
+            <a href="#contacts"
+               class="inline-flex items-center gap-3 bg-lime text-carbon font-display font-700 text-sm px-7 py-4 rounded-xl btn-glow w-full sm:w-auto justify-center">
+              <i class="fa-solid fa-bolt"></i>
+              Отримати консультацію
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-24">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+
+          <div class="reveal order-2 md:order-1 relative">
+            <img src="static/working.jpg"
+                 alt="Електрична інфраструктура"
+                 class="relative rounded-2xl w-full object-cover aspect-[4/3] border border-border shadow-2xl" />
+          </div>
+
+          <div class="reveal order-1 md:order-2">
+            <span class="section-label">Про нас</span>
+            <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 leading-tight text-cream">
+              Енергія для сталого <br/><span class="text-lime">розвитку</span>
+            </h2>
+            <p class="mt-6 text-muted font-body leading-relaxed text-base md:text-lg">
+              ПП «АВЕРС-LVIV» — ваш надійний партнер у сфері енергетики. Ми спеціалізуємося на забезпеченні надійного електропостачання та комплексній модернізації електричної інфраструктури.
+            </p>
+            <p class="mt-4 text-muted font-body leading-relaxed text-base md:text-lg">
+              Наша головна мета — створити міцний енергетичний фундамент, який дозволить вашому підприємству працювати безперебійно та ефективно масштабуватися.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="py-20 md:py-24 relative bg-panel/30 border-y border-border">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+
+        <div class="text-center mb-16 reveal">
+          <span class="section-label">Експертні рішення</span>
+          <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
+            Наші послуги
+          </h2>
         </div>
 
-        <h1 class="font-display font-900 mt-8 leading-[1.05] text-4xl sm:text-5xl md:text-6xl lg:text-7xl anim-up d-200">
-          <span class="text-cream">Надійне</span><br/>
-          <span class="hero-stripe">електропостачання</span><br/>
-          <span class="text-cream">вашого бізнесу</span>
-        </h1>
+        <div class="max-w-2xl mx-auto">
+          <div class="feature-card rounded-2xl p-8 reveal">
+            <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center mb-6">
+              <i class="fa-solid fa-plug-circle-bolt text-lime text-2xl"></i>
+            </div>
+            <h3 class="font-display font-700 text-xl text-cream mb-4">Постачання електричної енергії</h3>
+            <p class="text-muted text-base leading-relaxed font-body">
+              Гарантуємо стабільне постачання електроенергії для бізнесу будь-якого масштабу. Пропонуємо гнучкі умови співпраці, ринкові ціни та абсолютну прозорість юридичних розрахунків.
+            </p>
+          </div>
+        </div>
 
-        <p class="mt-6 text-muted font-body font-300 text-lg md:text-xl max-w-2xl leading-relaxed anim-up d-300">
-          Енергетична стабільність вашого підприємства — наш пріоритет. Гарантуємо надійність, повну прозорість розрахунків та сувору відповідність законодавству України.
-        </p>
+      </div>
+    </section>
 
-        <div class="mt-10 flex flex-wrap gap-4 anim-up d-400">
-          <a href="#contacts"
-             class="inline-flex items-center gap-3 bg-lime text-carbon font-display font-700 text-sm px-7 py-4 rounded-xl btn-glow">
-            <i class="fa-solid fa-bolt"></i>
-            Отримати консультацію
+    <section id="legal" class="py-20 md:py-24 relative">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
+
+        <div class="text-center mb-16 reveal">
+          <span class="section-label">Нормативна база</span>
+          <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
+            Працюємо виключно <br/>в правовому полі
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <a href="https://zakon.rada.gov.ua/laws/show/2019-19#Text" target="_blank" rel="noopener" class="feature-card rounded-2xl p-7 group block reveal">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-scroll text-lime text-xl"></i>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-muted group-hover:text-lime text-sm transition-colors mt-1"></i>
+            </div>
+            <h3 class="font-display font-700 text-base text-cream mt-5 mb-3 leading-snug">
+              Закон України<br/>«Про ринок електричної енергії»
+            </h3>
+          </a>
+
+          <a href="https://zakon.rada.gov.ua/laws/show/575/97-%D0%B2%D1%80#Text" target="_blank" rel="noopener" class="feature-card rounded-2xl p-7 group block reveal">
+            <div class="flex items-start justify-between gap-4">
+              <div class="w-12 h-12 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-book-open text-lime text-xl"></i>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square text-muted group-hover:text-lime text-sm transition-colors mt-1"></i>
+            </div>
+            <h3 class="font-display font-700 text-base text-cream mt-5 mb-3 leading-snug">
+              Закон України<br/>«Про електроенергетику»
+            </h3>
           </a>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
+    <section id="contacts" class="py-20 md:py-24 border-t border-border bg-panel/20">
+      <div class="max-w-7xl mx-auto px-5 md:px-8">
 
-  <section id="about" class="py-20 md:py-24">
-    <div class="max-w-7xl mx-auto px-5 md:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-
-        <div class="reveal order-2 md:order-1 relative">
-          <img src="static/working.jpg"
-               alt="Електрична інфраструктура"
-               class="relative rounded-2xl w-full object-cover aspect-[4/3] border border-border shadow-2xl" />
-        </div>
-
-        <div class="reveal order-1 md:order-2">
-          <span class="section-label">Про нас</span>
-          <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 leading-tight text-cream">
-            Енергія для сталого <br/><span class="text-lime">розвитку</span>
+        <div class="text-center mb-16 reveal">
+          <span class="section-label">Контакти</span>
+          <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
+            Почніть співпрацю з нами
           </h2>
-          <p class="mt-6 text-muted font-body leading-relaxed text-base md:text-lg">
-            ПП «АВЕРС-LVIV» — ваш надійний партнер у сфері енергетики. Ми спеціалізуємося на забезпеченні надійного електропостачання та комплексній модернізації електричної інфраструктури.
-          </p>
-          <p class="mt-4 text-muted font-body leading-relaxed text-base md:text-lg">
-            Наша головна мета — створити міцний енергетичний фундамент, який дозволить вашому підприємству працювати безперебійно та ефективно масштабуватися.
-          </p>
         </div>
-      </div>
-    </div>
-  </section>
 
+        <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
 
-  <section id="services" class="py-20 md:py-24 relative bg-panel/30 border-y border-border">
-    <div class="max-w-7xl mx-auto px-5 md:px-8">
-
-      <div class="text-center mb-16 reveal">
-        <span class="section-label">Експертні рішення</span>
-        <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
-          Наші послуги
-        </h2>
-      </div>
-
-      <div class="max-w-2xl mx-auto">
-        <div class="feature-card rounded-2xl p-8 reveal">
-          <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center mb-6">
-            <i class="fa-solid fa-plug-circle-bolt text-lime text-2xl"></i>
-          </div>
-          <h3 class="font-display font-700 text-xl text-cream mb-4">Постачання електричної енергії</h3>
-          <p class="text-muted text-base leading-relaxed font-body">
-            Гарантуємо стабільне постачання електроенергії для бізнесу будь-якого масштабу. Пропонуємо гнучкі умови співпраці, ринкові ціни та абсолютну прозорість юридичних розрахунків.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-
-  <section id="legal" class="py-20 md:py-24 relative">
-    <div class="max-w-7xl mx-auto px-5 md:px-8">
-
-      <div class="text-center mb-16 reveal">
-        <span class="section-label">Нормативна база</span>
-        <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
-          Працюємо виключно <br/>в правовому полі
-        </h2>
-      </div>
-
-      <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <a href="https://zakon.rada.gov.ua/laws/show/2019-19#Text" target="_blank" rel="noopener" class="feature-card rounded-2xl p-7 group block reveal">
-          <div class="flex items-start justify-between gap-4">
-            <div class="w-12 h-12 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-scroll text-lime text-xl"></i>
+          <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
+            <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-building text-lime text-xl"></i>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-muted group-hover:text-lime text-sm transition-colors mt-1"></i>
-          </div>
-          <h3 class="font-display font-700 text-base text-cream mt-5 mb-3 leading-snug">
-            Закон України<br/>«Про ринок електричної енергії»
-          </h3>
-        </a>
-
-        <a href="https://zakon.rada.gov.ua/laws/show/575/97-%D0%B2%D1%80#Text" target="_blank" rel="noopener" class="feature-card rounded-2xl p-7 group block reveal">
-          <div class="flex items-start justify-between gap-4">
-            <div class="w-12 h-12 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
-              <i class="fa-solid fa-book-open text-lime text-xl"></i>
+            <div>
+              <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Юридична особа</p>
+              <p class="text-cream font-display font-700">ПП «АВЕРС-LVIV»</p>
+              <p class="text-muted text-sm font-body mt-2">Код ЄДРПОУ: 41578156</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square text-muted group-hover:text-lime text-sm transition-colors mt-1"></i>
           </div>
-          <h3 class="font-display font-700 text-base text-cream mt-5 mb-3 leading-snug">
-            Закон України<br/>«Про електроенергетику»
-          </h3>
-        </a>
-      </div>
-    </div>
-  </section>
 
-
-  <section id="contacts" class="py-20 md:py-24 border-t border-border bg-panel/20">
-    <div class="max-w-7xl mx-auto px-5 md:px-8">
-
-      <div class="text-center mb-16 reveal">
-        <span class="section-label">Контакти</span>
-        <h2 class="font-display font-900 text-3xl md:text-4xl mt-6 text-cream">
-          Почніть співпрацю з нами
-        </h2>
-      </div>
-
-      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-
-        <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
-          <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
-            <i class="fa-solid fa-building text-lime text-xl"></i>
+          <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
+            <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-location-dot text-lime text-xl"></i>
+            </div>
+            <div>
+              <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Офіс компанії</p>
+              <p class="text-cream font-body text-sm leading-relaxed">79060, Україна, Львівська обл.,<br/>м. Львів, вул. Наукова, буд. 7</p>
+            </div>
           </div>
-          <div>
-            <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Юридична особа</p>
-            <p class="text-cream font-display font-700">ПП «АВЕРС-LVIV»</p>
-            <p class="text-muted text-sm font-body mt-2">Код ЄДРПОУ: 41578156</p>
+
+          <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
+            <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-phone text-lime text-xl"></i>
+            </div>
+            <div>
+              <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Телефон</p>
+              <a href="tel:+380673530777" class="text-cream font-display font-700 text-lg hover:text-lime transition-colors">
+                +38 067 353 07 77
+              </a>
+              <p class="text-muted text-sm font-body mt-2">Гойдик Любомир Степанович</p>
+            </div>
           </div>
+
         </div>
-
-        <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
-          <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
-            <i class="fa-solid fa-location-dot text-lime text-xl"></i>
-          </div>
-          <div>
-            <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Офіс компанії</p>
-            <p class="text-cream font-body text-sm leading-relaxed">79060, Україна, Львівська обл.,<br/>м. Львів, вул. Наукова, буд. 7</p>
-          </div>
-        </div>
-
-        <div class="feature-card rounded-2xl p-6 flex flex-col gap-4 items-center text-center reveal">
-          <div class="w-14 h-14 rounded-xl bg-lime/10 border border-lime/20 flex items-center justify-center flex-shrink-0">
-            <i class="fa-solid fa-phone text-lime text-xl"></i>
-          </div>
-          <div>
-            <p class="text-muted text-xs font-body mb-2 uppercase tracking-widest">Телефон</p>
-            <a href="tel:+380673530777" class="text-cream font-display font-700 text-lg hover:text-lime transition-colors">
-              +38 067 353 07 77
-            </a>
-            <p class="text-muted text-sm font-body mt-2">Гойдик Любомир Степанович</p>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="border-t border-border py-8 text-center bg-carbon">
+  </main>
+
+  <footer class="w-full mt-auto border-t border-border py-8 text-center bg-carbon">
     <div class="max-w-7xl mx-auto px-5 md:px-8">
       <p class="text-muted text-sm font-body">
         © 2026 ПП «АВЕРС-LVIV». Всі права захищені.
