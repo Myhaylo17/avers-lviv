@@ -175,6 +175,7 @@
   <header id="nav" class="fixed top-0 left-0 right-0 z-50">
     <div class="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-20 md:h-24">
 
+      <!-- Клікабельний логотип (чисте посилання без решітки) -->
       <a href="./" class="flex items-center group h-full py-2" id="logo-link">
         <div class="bg-white rounded-xl p-1.5 overflow-hidden border border-lime/30 shadow-[0_0_15px_rgba(0,255,0,0.15)] transition-transform duration-300 group-hover:scale-105 group-hover:shadow-[0_0_20px_rgba(0,255,0,0.3)]">
           <img src="static/logo.png" alt="АВЕРС-ЛЬВІВ Логотип" class="h-10 md:h-12 w-auto object-contain rounded-lg" />
@@ -228,9 +229,9 @@
             </span>
           </div>
 
-          <h1 class="font-display font-900 mt-6 sm:mt-8 leading-[1.15] sm:leading-[1.05] text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 class="font-display font-900 mt-6 sm:mt-8 leading-[1.2] sm:leading-[1.05] text-[28px] sm:text-5xl md:text-6xl lg:text-7xl">
             <span class="text-cream">Надійне</span><br class="sm:hidden" />
-            <span class="hero-stripe sm:ml-0">електропостачання</span><br/>
+            <span class="hero-stripe pr-2">електропостачання</span><br/>
             <span class="text-cream">вашого бізнесу</span>
           </h1>
 
@@ -427,10 +428,14 @@
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', (e) => {
+        e.preventDefault();
         const target = document.querySelector(anchor.getAttribute('href'));
         if (target) {
-          e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          history.replaceState({}, '', window.location.pathname);
         }
       });
     });
@@ -439,7 +444,11 @@
     if (logoLink) {
       logoLink.addEventListener('click', (e) => {
         e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        history.replaceState({}, '', window.location.pathname);
       });
     }
   </script>
